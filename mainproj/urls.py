@@ -21,5 +21,12 @@ urlpatterns = [
     path('admin/doc/', include('django.contrib.admindocs.urls')),
     path('admin/', admin.site.urls),
 
-    path('', include('pages.urls')),
+     # Index
+    path('', include('pos.urls')),
+       # Products
+    path('products/', include('products.urls')),
+     # Customers
+    path('customers/', include('customers.urls')),
+     # Sales
+    path('sales/', include('sales.urls')),
 ]
